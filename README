@@ -1,0 +1,41 @@
+# S$^2$Teacher: Step-by-step Teacher for Sparsely Annotated Oriented Object Detection
+
+![Status](https://img.shields.io/badge/status-upcoming-orange) ![Python](https://img.shields.io/badge/python-3.8+-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+
+## 📰 News
+
+🚀 Code release coming soon! Stay tuned for the official open-source version of **S$^2$Teacher**.
+
+## 📖 Abstract
+
+Although fully-supervised oriented object detection has made significant progress in remote sensing image understanding, it comes at the cost of labor-intensive annotation. Recent studies have explored weakly and semi-supervised learning to alleviate this burden. However, these methods overlook the difficulties posed by dense annotations in complex remote sensing scenes. 
+
+In this work, we introduce a novel setting called **Sparsely Annotated Oriented Object Detection (SAOOD)**, where only partial instances are labeled, and propose **S$^2$Teacher** to address its challenges. Specifically, we tackle two key issues:
+
+1. Sparse labeling leads to overfitting on limited foreground representations.
+2. Unlabeled objects (false negatives) confuse feature learning.
+
+Our **S$^2$Teacher** method:
+
+- Uses **angle-consistency guidance** to progressively mine pseudo-labels for unlabeled objects from easy to hard, enhancing foreground representations.
+- Reweights the loss of unlabeled objects to mitigate their impact during training.
+
+Extensive experiments show that **S$^2$Teacher** significantly improves detector performance across different sparse annotation levels and achieves near fully-supervised performance on the DOTA dataset with only 10% of annotation instances, effectively balancing accuracy and labeling cost.
+
+## ⚡ Key Features
+
+- Supports sparsely annotated oriented object detection in remote sensing images.
+- Progressive pseudo-label mining guided by angle-consistency.
+- Loss reweighting for unlabeled objects to reduce confusion.
+- Compatible with DOTA dataset and standard oriented object detectors.
+- Achieves near fully-supervised performance with significantly fewer labels.
+
+## 📂 Repository Structure
+
+## 🛠️ Installation
+
+> Installation instructions will be provided with the code release.
+
+---
+
+Stay tuned for the official code release! 🎉
